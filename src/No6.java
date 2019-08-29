@@ -2,11 +2,12 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 /**
+ * 遍历链表
  * @author: 胖虎
  * @date: 2019/8/20 19:34
  **/
 public class No6 {
-    class ListNode {
+    private class ListNode {
         int val;
         ListNode next = null;
 
