@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author: 胖虎
  * @date: 2019/8/29 19:00
@@ -61,9 +63,9 @@ public class Temp {
         Thread a = new Thread(r1);
         Thread b = new Thread(r2);
         Thread c = new Thread(r3);
-
         a.start();
         b.start();
         c.start();
+        TimeUnit.HOURS.sleep(1);
     }
 }
