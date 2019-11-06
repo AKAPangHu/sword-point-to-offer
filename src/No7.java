@@ -38,6 +38,7 @@ public class No7 {
         int val = pre[preI];
         TreeNode head = new TreeNode(val);
         int index = map.get(val);
+        //左子树有多少个结点
         int numInLeftTree = index - inI;
         head.left = preIn(pre, preI + 1, preI + numInLeftTree,in, inI, index - 1, map);
         head.right = preIn(pre, preI + numInLeftTree + 1, preJ, in, index + 1, inJ, map);
