@@ -21,6 +21,7 @@ public class No54 {
         }
         TreeNode result = null;
         result = kthNodeCore(pRoot.left, k);
+        //剪枝
         if (result != null) {
             return result;
         }
